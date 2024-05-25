@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NopeSky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Ensure the content stays above the decorative elements */
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        /* Random decorative elements */
+        .decor {
+            position: absolute;
+            z-index: 0;
+            pointer-events: none; /* Ensure the decorative elements don't interfere with user interactions */
+        }
+        /* Example of a circle */
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #7a9cf9;
+            border-radius: 50%;
+            top: 20%;
+            left: 10%;
+        }
+        /* Example of a triangle */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #f97a7a;
+            top: 70%;
+            left: 60%;
+        }
+        /* Example of a line */
+        .line {
+            width: 150px;
+            height: 2px;
+            background-color: #9cf97a;
+            top: 40%;
+            left: 70%;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, I am NopeSky.</h1>
+        <p>Just doin' gaming and YouTube stuffs.</p>
+        <p>Check out my YouTube channel: <a href="https://www.youtube.com/@ImNotNopeSky">https://www.youtube.com/@ImNotNopeSky</a></p>
+    </div>
+    
+    <!-- Random decorative elements -->
+    <div class="decor circle"></div>
+    <div class="decor triangle"></div>
+    <div class="decor line"></div>
+</body>
+</html>
